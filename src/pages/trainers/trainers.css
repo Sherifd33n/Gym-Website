@@ -50,7 +50,7 @@
 
 @media screen and (max-width: 600px) {
   .trainers__container {
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: 1fr;
     gap: 2rem;
   }
 
