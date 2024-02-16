@@ -1,0 +1,377 @@
+.main__header {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  margin-top: 3rem;
+}
+
+.main__header-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6rem;
+}
+
+.main__header-left {
+  margin-top: -3rem;
+}
+
+/* .main__header-left h1 {
+  font-size: 2.8rem;
+} */
+
+.main__header-left h4 {
+  margin-bottom: 0.8rem;
+  color: var(--color-secondary);
+}
+
+.main__header-left p {
+  margin: 1rem 0 3.5rem;
+  font-size: 1.05rem;
+}
+
+.main__header-right {
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.main__header-circle {
+  width: 22rem;
+  height: 22rem;
+  background: linear-gradient(75deg, var(--color-secondary), transparent);
+  border-radius: 50%;
+  position: absolute;
+  filter: blur(2px);
+}
+
+.main__header-image {
+  position: relative;
+}
+
+.programs {
+  margin-top: 4rem;
+}
+
+.programs__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.programs__program a {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.programs__program:hover a {
+  background: var(--color-secondary);
+  color: var(--color-gray-600);
+}
+
+/* ---------------- ------------- */
+.values {
+  margin-top: 8rem;
+}
+
+.values__container {
+  display: grid;
+  grid-template-columns: 38% 50%;
+  gap: 12%;
+}
+
+.values__right p {
+  margin: 1.5rem 0 2rem;
+}
+
+.values__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.4rem 2.4rem;
+}
+
+.card.values__value {
+  padding-top: 2.5rem;
+  text-align: left;
+  position: relative;
+}
+
+.card.values__value span {
+  position: absolute;
+  top: -1.5rem;
+}
+
+.faqs {
+  margin-top: 8rem;
+}
+
+.faqs__wrapper {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem 5rem;
+  align-items: flex-start;
+}
+
+.faq {
+  background: var(--color-gray-500);
+  padding: 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.faq div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq__icon {
+  background: transparent;
+  color: var(--color-gray-100);
+  font-size: 1.5rem;
+}
+
+.faq p {
+  margin-top: 1.5rem;
+}
+
+.testimonials {
+  margin-top: 8rem;
+  width: 50rem;
+  margin-inline: auto;
+}
+
+.testimonials__head {
+  justify-content: center;
+}
+
+.card.testimonial {
+  position: relative;
+  text-align: left;
+  margin-top: 3rem;
+}
+
+.testimonial__avatar {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 1.1rem;
+  overflow: hidden;
+  border: 2px solid transparent;
+  position: absolute;
+  top: -2rem;
+  left: calc(50% - 2rem);
+  box-shadow: 0 1.5rem 2rem rgba(26, 26, 54, 0.4);
+  transition: var(--transition);
+}
+
+.testimonial:hover .testimonial__avatar {
+  border-radius: 50%;
+  border-color: var(--color-gray-400);
+}
+
+.testimonial__quote {
+  font-style: italic;
+  margin: 0.8rem 0 1.5rem;
+}
+
+.card .small.testimonial__title {
+  margin-top: 0.3rem;
+}
+
+.testimonials__btn-container {
+  width: fit-content;
+  margin: 2rem auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.testimonials__btn {
+  background: transparent;
+  cursor: pointer;
+}
+
+.testimonials__btn svg {
+  fill: var(--color-primary);
+  font-size: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+footer {
+  background: var(--color-primary);
+  margin-top: 7rem;
+  padding-top: 7rem;
+  font-size: 0.9rem;
+  color: var(--color-gray-100);
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: 26rem 1fr 1fr 1fr;
+  gap: 6rem;
+}
+
+.footer__container article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.7rem;
+}
+
+.footer__container article p {
+  margin-top: 0.5rem;
+}
+
+.footer__container article h4 {
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+}
+
+.footer__socials {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.footer__socials a {
+  background: var(--color-gray-100);
+  padding: 0.4rem 0.4rem 0 0.4rem;
+  border: 1px solid transparent;
+  border-radius: 0.4rem;
+  font-size: 1.5rem;
+  transition: var(--transition);
+}
+
+.footer__socials a svg {
+  color: var(--color-gray-600);
+}
+
+.footer__socials a:hover {
+  border-color: var(--color-gray-100);
+  background: transparent;
+}
+
+.footer__copyright {
+  color: var(--color-gray-100);
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 1px solid var(--color-gray-300);
+  margin-top: 5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .main__header {
+    height: fit-content;
+    padding: 6rem 0;
+  }
+
+  .main__header-circle {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  .programs__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .values__container {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .values__wrapper {
+    gap: 4rem 3rem;
+  }
+
+  .values__image {
+    display: none;
+  }
+
+  .faqs__wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials {
+    width: 75%;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main__header {
+    margin-top: 0;
+    padding: 12rem 0 0;
+    height: 100vh;
+  }
+
+  .main__header-image,
+  .main__header-circle {
+    display: none;
+  }
+
+  .main__header-container {
+    grid-template-columns: 1fr;
+  }
+
+  .programs__wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .programs__program {
+    width: 84%;
+    margin: 0 auto;
+  }
+
+  .values__wrapper {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .card.values__value {
+    width: 84%;
+    margin-inline: auto;
+  }
+
+  .faqs__wrapper {
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+
+  .testimonials {
+    width: 100%;
+  }
+
+  footer {
+    margin-top: 5rem;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .footer__container article {
+    align-items: center;
+  }
+
+  .footer__container article p {
+    text-align: center;
+  }
+}
